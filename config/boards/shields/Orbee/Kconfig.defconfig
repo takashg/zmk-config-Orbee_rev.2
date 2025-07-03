@@ -1,0 +1,22 @@
+if SHIELD_ORBEE_R
+
+config ZMK_KEYBOARD_NAME
+    default "Orbee_R"
+
+config ZMK_SPLIT
+    default y
+
+config ZMK_SPLIT_ROLE_CENTRAL
+    default y
+
+endif
+
+if SHIELD_ORBEE_L
+
+config ZMK_KEYBOARD_NAME
+    default "Orbee_L"
+
+config ZMK_SPLIT
+    default y
+
+endif

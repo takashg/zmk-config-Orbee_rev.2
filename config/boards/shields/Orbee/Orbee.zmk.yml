@@ -1,0 +1,8 @@
+file_format: "1"
+id: Orbee
+name: Orbee
+type: shield
+url: https://github.com/MeowCatpawkittie/zmk-config-Orbee
+requires: [seeeduino_xiao_ble]
+features:
+  - keys
