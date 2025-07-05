@@ -33,13 +33,13 @@
         touch_behavior_2: touch_2 {
             compatible = "zmk,behavior-momentary";
             label = "Touch 2";
-            bindings = <&kp &kp PG_UP>;
+            bindings = <&kp PG_UP>;
         };
 
         touch_behavior_3: touch_3 {
             compatible = "zmk,behavior-momentary";
             label = "Touch 3";
-            bindings = <&kp &kp END>;
+            bindings = <&kp END>;
         };
 
         lt_to_layer_0: lt_to_layer_0 {
