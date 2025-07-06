@@ -14,29 +14,6 @@
     status = "okay";
 };
 
-&gpio_keys {
-    compatible = "gpio-keys";
-    label = "Touch GPIOs";
-
-    touch_input_1: gpio_key_1 {
-        gpios = <&gpio0 16 (GPIO_PULL_UP | GPIO_ACTIVE_LOW)>;
-        label = "Touch Key 1";
-        input-behavior = <&touch_behavior_1>;
-    };
-
-    touch_input_2: gpio_key_2 {
-        gpios = <&gpio1 0 (GPIO_PULL_UP | GPIO_ACTIVE_LOW)>;
-        label = "Touch Key 2";
-        input-behavior = <&touch_behavior_2>;
-    };
-
-    touch_input_3: gpio_key_3 {
-        gpios = <&gpio1 10 (GPIO_PULL_UP | GPIO_ACTIVE_LOW)>;
-        label = "Touch Key 3";
-        input-behavior = <&touch_behavior_3>;
-    };
-};
-
 / {
     behaviors {
         touch_behavior_1: touch1 {
@@ -56,5 +33,26 @@
             label = "Touch3";
             bindings = <&kp END>;
         };
+    };
+
+    touch_input_1: gpio_key_1 {
+        compatible = "zmk,input-gpio";
+        label = "Touch Key 1";
+        gpios = <&gpio0 16 (GPIO_PULL_UP | GPIO_ACTIVE_LOW)>;
+        input-behavior = <&touch_behavior_1>;
+    };
+
+    touch_input_2: gpio_key_2 {
+        compatible = "zmk,input-gpio";
+        label = "Touch Key 2";
+        gpios = <&gpio1 0 (GPIO_PULL_UP | GPIO_ACTIVE_LOW)>;
+        input-behavior = <&touch_behavior_2>;
+    };
+
+    touch_input_3: gpio_key_3 {
+        compatible = "zmk,input-gpio";
+        label = "Touch Key 3";
+        gpios = <&gpio1 10 (GPIO_PULL_UP | GPIO_ACTIVE_LOW)>;
+        input-behavior = <&touch_behavior_3>;
     };
 };
