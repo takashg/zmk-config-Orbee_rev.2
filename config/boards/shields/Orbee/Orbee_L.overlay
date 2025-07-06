@@ -12,7 +12,26 @@
 };
 
 / {
-  behaviors {
+    behaviors {
+        touch_behavior_1: touch1 {
+            compatible = "zmk,behavior-momentary";
+            label = "Touch1";
+            bindings = <&kp PG_DN>;  // 任意のキー
+        };
+
+        touch_behavior_2: touch2 {
+            compatible = "zmk,behavior-momentary";
+            label = "Touch2";
+            bindings = <&kp PG_UP>;
+        };
+
+        touch_behavior_3: touch3 {
+            compatible = "zmk,behavior-momentary";
+            label = "Touch3";
+            bindings = <&kp END>;
+        };
+    };
+
     touch_input_1: gpio_key_1 {
         compatible = "zmk,input-gpio";
         label = "Touch Key 1";
@@ -23,17 +42,18 @@
     touch_input_2: gpio_key_2 {
         compatible = "zmk,input-gpio";
         label = "Touch Key 2";
-        gpios = <&gpio0 (GPIO_PULL_UP | GPIO_ACTIVE_LOW)>;
+        gpios = <&gpio1 0 (GPIO_PULL_UP | GPIO_ACTIVE_LOW)>;
         input-behavior = <&touch_behavior_2>;
     };
 
     touch_input_3: gpio_key_3 {
         compatible = "zmk,input-gpio";
         label = "Touch Key 3";
-        gpios = <&gpio0 10 (GPIO_PULL_UP | GPIO_ACTIVE_LOW)>;
+        gpios = <&gpio1 10 (GPIO_PULL_UP | GPIO_ACTIVE_LOW)>;
         input-behavior = <&touch_behavior_3>;
     };
 
+};
 &left_encoder0 {
     status = "okay";
 };
