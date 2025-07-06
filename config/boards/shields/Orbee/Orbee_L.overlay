@@ -26,7 +26,7 @@
         };
 
         touch_behavior_3: touch3 {
-            compatible = "zmk,behavior-momentary";
+        compatible = "zmk,behavior-momentary";
             label = "Touch3";
             bindings = <&kp END>;
         };
@@ -53,7 +53,6 @@
         input-behavior = <&touch_behavior_3>;
     };
 
-};
 &left_encoder0 {
     status = "okay";
 };
