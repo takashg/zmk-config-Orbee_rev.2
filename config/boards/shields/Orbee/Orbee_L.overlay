@@ -36,25 +36,5 @@
         gpios = <&gpio1 10 GPIO_ACTIVE_LOW>;
         input-behavior = <&touch_behavior_3>;
     };
-
-    
-    behaviors {
-        touch_behavior_1: touch1 {
-            compatible = "zmk,behavior-momentary";
-            label = "TouchKey1";
-            bindings = <&kp A>;
-        };
-
-        touch_behavior_2: touch2 {
-            compatible = "zmk,behavior-momentary";
-            label = "TouchKey2";
-            bindings = <&kp B>;
-        };
-
-        touch_behavior_3: touch3 {
-            compatible = "zmk,behavior-momentary";
-            label = "TouchKey3";
-            bindings = <&mo 1>;
-        };
-    };
+   };
 };
