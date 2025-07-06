@@ -24,6 +24,26 @@
     };
 
     behaviors {
+        touch_behavior_1: touch1 {
+            compatible = "zmk,behavior-momentary";
+            label = "TouchKey1";
+            bindings = <&kp A>;
+        };
+
+        touch_behavior_2: touch2 {
+            compatible = "zmk,behavior-momentary";
+            label = "TouchKey2";
+            bindings = <&kp B>;
+        };
+
+        touch_behavior_3: touch3 {
+            compatible = "zmk,behavior-momentary";
+            label = "TouchKey3";
+            bindings = <&mo 1>;
+        };
+
+
+
         lt_to_layer_0: lt_to_layer_0 {
             compatible = "zmk,behavior-hold-tap";
             label = "LAYER_TAP_TO_0";
