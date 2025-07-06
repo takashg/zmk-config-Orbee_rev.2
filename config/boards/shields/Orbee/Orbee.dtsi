@@ -30,7 +30,7 @@
                 ;
     };
 
-       {
+   /   {
         touch_input_1: gpio_key_1 {
         compatible = "zmk,input-gpio";
         label = "Touch Key 1";
