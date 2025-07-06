@@ -16,7 +16,7 @@
         touch_behavior_1: touch1 {
             compatible = "zmk,behavior-momentary";
             label = "Touch1";
-            bindings = <&kp PG_DN>;  // 任意のキー
+            bindings = <&kp PG_DN>;
         };
 
         touch_behavior_2: touch2 {
