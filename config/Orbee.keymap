@@ -120,12 +120,12 @@
             sensor-bindings = <&scroll_up_down>;
         };
 
-        layer_5 {
+        ARROW {
             bindings = <
-&trans  &trans  &trans  &trans  &trans                    &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans                          &trans
+&none             &none                &kp PAGE_UP    &none    &none                     &none   &none           &kp UP_ARROW    &none          &none
+&kp LEFT_CONTROL  &mt LEFT_SHIFT HOME  &kp PAGE_DOWN  &kp END  &none   &trans    &trans  &none   &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT      &kp LEFT_CONTROL
+&kp LEFT_SHIFT    &kp LC(SPACE)        &kp LS(SPACE)  &none    &none   &trans    &trans  &none   &none           &kp RC(PLUS)    &kp RC(MINUS)  &kp RIGHT_SHIFT
+&none             &none                &none          &trans   &trans  &trans    &trans  &trans                                                 &trans
             >;
 
             sensor-bindings = <&scroll_up_down>;
