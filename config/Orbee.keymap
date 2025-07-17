@@ -82,10 +82,10 @@
 
         QWERTY {
             bindings = <
-&kp Q               &kp W             &kp E    &kp R           &kp T                                       &kp Y        &kp U            &lt 1 I    &kp O         &kp P
-&mt LEFT_CONTROL A  &mt LEFT_SHIFT S  &lt 4 D  &mt LEFT_ALT F  &kp G        &kp C_BRI_UP    &kp C_VOL_UP   &kp H        &mt RIGHT_ALT J  &lt 4 K    &mt RSHIFT L  &mt RIGHT_CONTROL MINUS
-&mt ESCAPE Z        &kp X             &kp C    &kp V           &kp B        &kp C_BRI_DN    &kp C_VOL_DN   &kp N        &kp M            &kp COMMA  &kp DOT       &kp LEFT_WIN
-&none               &none             &none    &lt 1 CAPSLOCK  &lt 2 SPACE  &lt 3 TAB       &kp BACKSPACE  &lt 5 ENTER                                            &none
+&kp Q               &kp W             &kp E    &kp R           &kp T                                    &kp Y        &kp U            &lt 1 I    &kp O         &kp P
+&mt LEFT_CONTROL A  &mt LEFT_SHIFT S  &lt 4 D  &mt LEFT_ALT F  &kp G        &none        &kp C_VOL_UP   &kp H        &mt RIGHT_ALT J  &lt 4 K    &mt RSHIFT L  &mt RIGHT_CONTROL MINUS
+&mt ESCAPE Z        &kp X             &kp C    &kp V           &kp B        &none        &kp C_VOL_DN   &kp N        &kp M            &kp COMMA  &kp DOT       &kp LEFT_WIN
+&none               &none             &none    &lt 1 CAPSLOCK  &lt 2 SPACE  &lt 3 TAB    &kp BACKSPACE  &lt 5 ENTER                                            &none
             >;
 
             sensor-bindings =
@@ -128,10 +128,10 @@
 
         MOUSE_BLUETOOTH {
             bindings = <
-&bt BT_SEL 0      &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4                    &none   &kp C_VOL_DN  &kp C_MUTE  &kp C_VOL_UP  &none
-&kp LEFT_CONTROL  &kp C_VOL_DN  &kp C_MUTE    &kp C_VOL_UP  &none         &trans    &trans  &none   &mkp MB1      &none       &mkp MB2      &kp RIGHT_CONTROL
-&kp RIGHT_SHIFT   &none         &none         &none         &none         &trans    &trans  &none   &mkp MB4      &none       &mkp MB5      &kp RIGHT_SHIFT
-&bt BT_CLR_ALL    &bt BT_CLR    &none         &trans        &trans        &trans    &trans  &trans                                          &none
+&bt BT_SEL 0      &bt BT_SEL 1   &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4                    &none   &kp C_VOL_DN  &kp C_MUTE  &kp C_VOL_UP  &none
+&kp LEFT_CONTROL  &kp C_VOL_DN   &kp C_MUTE    &kp C_VOL_UP  &none         &trans    &trans  &none   &mkp MB1      &none       &mkp MB2      &kp RIGHT_CONTROL
+&kp RIGHT_SHIFT   &kp C_BRI_DEC  &none         &kp C_BRI_UP  &none         &trans    &trans  &none   &mkp MB4      &none       &mkp MB5      &kp RIGHT_SHIFT
+&bt BT_CLR_ALL    &bt BT_CLR     &none         &trans        &trans        &trans    &trans  &trans                                          &none
             >;
 
             sensor-bindings = <&scroll_up_down>;
